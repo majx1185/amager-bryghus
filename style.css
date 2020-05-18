@@ -1,0 +1,36 @@
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: none;
+}
+
+.bar1,
+.bar3 {
+    width: 53px;
+    height: 3px;
+    background-color: black;
+    border-radius: 10vw;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.bar2 {
+    width: 65px;
+    height: 3px;
+    background-color: black;
+    border-radius: 10vw;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-13px, 9px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-10px, -9px);
+}
