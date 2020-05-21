@@ -1,3 +1,9 @@
+/*
+* {
+    scroll-behavior: smooth;
+}
+*/
+
 .bg-dark {
     background-color: #000 !important;
 }
@@ -160,18 +166,12 @@
     height: 100%;
 }
 
-/*LANDINGPAGE*/
+/*HISTORIE*/
 
 
-/*FORSIDE*/
+/*PICTURES*/
 
-.forside-content .container img {
-    width: 100%;
-}
-
-/*TAPROOMS*/
-
-.taprooms-content .container img {
+img {
     width: 100%;
 }
 
