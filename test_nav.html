@@ -14,10 +14,11 @@
 </head>
 
 <body>
-    <header class="navigation-primary head-main">
-        <div class="navbar navbar-dark bg-white">
+    <!--    <header class="navigation-primary" id="navbar-menu">-->
+    <!--
+        <div class="navbar bg-white">
             <div class="container d-flex">
-                <a href="#" class="navbar-brand text-dark d-flex align-items-center">
+                <a href="#" class="navbar-brand text-dark">
                     <div class="logo">
                         <a href="#"><img src="billeder/logo_AB_primary.png" class="ml-5" alt="logo_amagerbryghus"></a>
                     </div>
@@ -27,7 +28,7 @@
                 </a>
             </div>
         </div>
-        <!--navbar end-->
+        navbar end
 
         <div class="fixed-top main-menu collapse" id="collapseNav">
             <div class="p-5">
@@ -48,44 +49,75 @@
                 </ul>
             </div>
         </div>
-        <!--main-menu end-->
-    </header>
+-->
+    <!--main-menu end-->
+    <!--    </header>-->
+
+    <div class="accordion" id="accordion2">
+
+        <!--ACCORDION ITEM TWO-->
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                    |||
+                </a>
+            </div>
+            <div id="collapseTwo" class="accordion-body collapse bg-dark">
+                <div class="accordion-inner">
+                    <a href="#!">Forside</a>
+                    <br>
+                    <a href="#!">Vores øl</a>
+
+                    <!--ACCORDION INSIDE ACCORDION ITEM TWO-->
+                    <div class="accordion" id="accordion1">
+
+                        <div class="accordion-group" style="border:0;">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOneA">
+                                    Om bryggeriet
+                                </a>
+                            </div>
+                            <div id="collapseOneA" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <a href="#!">Kontakt</a>
+                                    <br>
+                                    <a href="#!">Historie</a>
+                                    <br>
+                                    <a href="#!">Rundvisning</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#!">Taprooms</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <main class="forside-content container">
         <div class="row">
-            <div class="container p-0 my-5 bg-dark mx-3 row no-gutters">
-                <div class="img-gradient col-lg-8">
-                    <img src="billeder/foto_placeholder.png" alt="placeholder">
-                </div>
-                <div class="col-lg-4 my-lg-auto">
-                    <h1 class="text-white pl-5">Box example</h1>
-                    <p class="text-white px-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, in ex consequuntur.</p>
-                    <a class="btn btn-lg btn-primary ml-5 mb-5" href="#" role="button">View this</a>
-                </div>
-
+            <div class="container p-0 my-5 bg-dark mx-3">
+                <img src="billeder/foto_placeholder.png" alt="placeholder">
+                <h1 class="text-white">Box example</h1>
+                <a class="btn btn-lg btn-primary" href="#" role="button">View this</a>
             </div>
 
             <div class="container p-0 my-5 bg-dark mx-3 col-lg">
-                <h1 class="text-white pl-5 pt-5">Box example</h1>
-                <p class="text-white px-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, in ex consequuntur.</p>
-                <a class="btn btn-lg btn-primary ml-5 mb-5" href="#" role="button">View this</a>
+                <h1 class="text-white">Box example</h1>
+                <a class="btn btn-lg btn-primary" href="#" role="button">View this</a>
             </div>
 
             <div class="container p-0 my-5 bg-dark mx-3 col-lg">
-                <h1 class="text-white pl-5 pt-5">Box example</h1>
-                <p class="text-white px-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, in ex consequuntur.</p>
-                <a class="btn btn-lg btn-primary ml-5 mb-5" href="#" role="button">View this</a>
+                <h1 class="text-white">Box example</h1>
+                <a class="btn btn-lg btn-primary" href="#" role="button">View this</a>
             </div>
 
-            <div class="container p-0 my-5 bg-dark mx-3 row no-gutters">
-                <div class="img-gradient2 col-lg-8 order-lg-last">
-                    <img src="billeder/foto_placeholder.png" alt="placeholder">
-                </div>
-                <div class="col-lg-4 my-lg-auto order-lg-first">
-                    <h1 class="text-white pl-5">Box example</h1>
-                    <p class="text-white px-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, in ex consequuntur.</p>
-                    <a class="btn btn-lg btn-primary ml-5 mb-5" href="#" role="button">View this</a>
-                </div>
+            <div class="container p-0 my-5 bg-dark mx-3">
+                <img src="billeder/foto_placeholder.png" alt="placeholder">
+                <h1 class="text-white">Box example</h1>
+                <a class="btn btn-lg btn-primary" href="#" role="button">View this</a>
             </div>
         </div>
     </main>
