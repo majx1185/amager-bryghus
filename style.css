@@ -182,7 +182,8 @@
 /*FORSIDE*/
 
 .img-gradient,
-.img-gradient2 {
+.img-gradient2,
+.img-gradient3 {
     position: relative;
     display: inline-block;
 }
@@ -193,7 +194,8 @@
 Convert HEX to RGBA - http://hex2rgba.devoth.com/
 */
 .img-gradient:after,
-.img-gradient2:after {
+.img-gradient2:after,
+.img-gradient3:after {
     content: '';
     position: absolute;
     left: 0;
@@ -205,7 +207,8 @@ Convert HEX to RGBA - http://hex2rgba.devoth.com/
 }
 
 .img-gradient img,
-.img-gradient2 img {
+.img-gradient2 img,
+.img-gradient3 img {
     display: block;
 }
 
@@ -252,7 +255,7 @@ img {
         background: linear-gradient(to right, transparent 0%, black 100%);
     }
 
-    .img-gradient2:after {
+    .img-gradient3:after {
         background: linear-gradient(to left, transparent 0%, black 100%);
     }
 }
