@@ -183,16 +183,12 @@
 
 .img-gradient,
 .img-gradient2,
-.img-gradient3 {
+.img-gradient3,
+.img-gradient4 {
     position: relative;
     display: inline-block;
 }
 
-
-/*
-#002f4b,#dc4225
-Convert HEX to RGBA - http://hex2rgba.devoth.com/
-*/
 .img-gradient:after,
 .img-gradient2:after,
 .img-gradient3:after {
@@ -206,9 +202,21 @@ Convert HEX to RGBA - http://hex2rgba.devoth.com/
     background: linear-gradient(to bottom, transparent 0%, black 100%);
 }
 
+.img-gradient4:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: linear-gradient(to right, black, transparent, black);
+}
+
 .img-gradient img,
 .img-gradient2 img,
-.img-gradient3 img {
+.img-gradient3 img,
+.img-gradient4 img {
     display: block;
 }
 
@@ -217,12 +225,17 @@ Convert HEX to RGBA - http://hex2rgba.devoth.com/
 .affix {
     top: 0;
     width: 100%;
-    z-index: 9999 !important;
 }
 
-.affix + {
-    padding-top: 70px;
+.affix-top {
+    width: 100%;
 }
+
+.affix-bottom {
+    width: 100%;
+    position: absolute;
+}
+
 
 /*PICTURES*/
 
