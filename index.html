@@ -14,31 +14,199 @@
 </head>
 
 <body>
-    <header class="landing head-main">
-        <div class="logo pt-4 pb-4">
-            <a href="#"><img src="billeder/logo_AB_primary.png" class="mx-auto d-block" alt="logo_amagerbryghus"></a>
+    <div id="myModal" class="modal fade slide-down">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="mx-auto my-auto">
+                    <div class="">
+                        <h4 class="modal-title text-center">Er du over 18?</h4>
+                    </div>
+                    <div class="mt-5">
+                        <button type="button" class="btn btn-primary bg-dark p-5 mr-4" data-dismiss="modal" aria-hidden="true">Ja</button>
+                        <a href="404.html"><button type="button" class="btn btn-primary bg-dark p-5 ml-4" aria-hidden="true">Nej</button></a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <header class="navigation-primary head-main">
+        <div class="navbar navbar-dark bg-white">
+            <div class="container d-flex">
+                <div class="row mx-3 mx-lg-0">
+                    <a href="#!" class="text-dark">
+                        <p>
+                            DA
+                        </p>
+                    </a>
+                    <p class="">
+                        /
+                    </p>
+                    <a href="EN-forside.html" class="text-dark">
+                        <p>
+                            EN
+                        </p>
+                    </a>
+                </div>
+                <a href="#" class="navbar-brand text-dark d-flex align-items-center">
+                    <div class="logo">
+                        <a href="#"><img src="billeder/logo_AB_primary.png" alt="logo_amagerbryghus"></a>
+                    </div>
+                </a>
+                <a class="nav-button mr-3" data-toggle="collapse" href="#collapseNav" role="button" aria-expanded="false" aria-controls="collapseNav">
+                    <span id="nav-icon3"><span></span><span></span><span></span><span></span></span>
+                </a>
+            </div>
+        </div>
+        <!--navbar end-->
+
+        <div class="fixed-top main-menu collapse" id="collapseNav">
+            <div class="p-5">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Forside</a></li>
+                    <li class="nav-item"><a class="nav-link" href="taprooms.html">Taprooms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="beers.html">Vores øl</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Om bryggeriet</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-white" href="kontakt.html">Kontakt</a>
+                            <a class="dropdown-item text-white" href="historien.html">Historie</a>
+                            <a class="dropdown-item text-white" href="rundvisning.html">Rundvisning</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--main-menu end-->
     </header>
 
-    <main class="container p-0">
-        <a href="forside.html">
-            <div class="jumbotron bg-dark my-0 mx-3 mx-lg-0 py-5">
-                <h1 class="text-white text-center">Main site</h1>
+
+
+    <main class="forside-content container">
+        <div class="row">
+            <div class="container p-0 mt-5 bg-dark mx-3 row no-gutters">
+                <div class="img-gradient col-lg-8">
+                    <img src="billeder/foto_placeholder.png" alt="placeholder">
+                </div>
+                <div class="col-lg-4 my-lg-auto">
+                    <h1 class="text-white pl-5">Box example</h1>
+                    <p class="text-white px-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, in ex consequuntur.</p>
+                    <a class="btn btn-lg btn-primary ml-5 mb-5" href="#" role="button">View this</a>
+                </div>
             </div>
-        </a>
+
+            <div class="container p-0 mt-5 bg-dark mx-3 col-lg">
+                <div class="img-gradient2">
+                    <img src="billeder/foto_placeholder.png" alt="placeholder">
+                </div>
+                <h1 class="text-white pl-5">Box example</h1>
+                <p class="text-white px-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, in ex consequuntur.</p>
+                <a class="btn btn-lg btn-primary ml-5 mb-5" href="#" role="button">View this</a>
+            </div>
+
+            <div class="container p-0 mt-5 bg-dark mx-3 col-lg">
+                <div class="img-gradient2">
+                    <img src="billeder/foto_placeholder.png" alt="placeholder">
+                </div>
+                <h1 class="text-white pl-5">Box example</h1>
+                <p class="text-white px-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, in ex consequuntur.</p>
+                <a class="btn btn-lg btn-primary ml-5 mb-5" href="#" role="button">View this</a>
+            </div>
+
+            <div class="container p-0 my-5 bg-dark mx-3 row no-gutters">
+                <div class="img-gradient3 col-lg-8 order-lg-last">
+                    <img src="billeder/foto_placeholder.png" alt="placeholder">
+                </div>
+                <div class="col-lg-4 my-lg-auto order-lg-first">
+                    <h1 class="text-white pl-5">Box example</h1>
+                    <p class="text-white px-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, in ex consequuntur.</p>
+                    <a class="btn btn-lg btn-primary ml-5 mb-5" href="#" role="button">View this</a>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <main class="container p-0">
-        <a href="taprooms.html">
-            <div class="jumbotron bg-dark my-4 mx-3 mx-lg-0">
-                <h1 class="text-white text-center">Taprooms</h1>
-            </div>
-        </a>
-    </main>
 
-    <section class="age-notice">
-        <p class="text-uppercase text-center mx-3">by proceeding to one of the sites, you confirm that you are above the local drinking ages</p>
-    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-secondary pt-4">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+            <!-- Footer links -->
+            <div class="row text-center text-md-left mt-3 pb-3">
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                    <img src="billeder/logo_AB_primary.png" alt="amagerbryhus">
+                    <p class="mt-4">Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+                <!-- Dividing line -->
+                <hr class="w-100 clearfix d-md-none">
+                <!-- Dividing line -->
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="mb-4 font-weight-bold">Kontakt</h6>
+                    <p><strong>Amager Bryghus</strong></p>
+                    <p>Kirstinehøj 38B</p>
+                    <p>2770 Kastrup</p>
+                    <p>Tlf: + 45 32 50 62 00</p>
+                    <p>Email: info@amagerbryghus.dk</p>
+                    <br>
+                    <p><strong>Taproom Nørreport</strong></p>
+                    <p>Nørre Voldgade 27</p>
+                    <p>1358 København</p>
+                    <p>Tlf: + 45 xx xx xx xx</p>
+                    <p>Email: xxxxx@xxx.dk</p>
+                    <br>
+                    <p><strong>Taproom Islands Brygge</strong></p>
+                    <p>Egilsgade 20</p>
+                    <p>2300 København</p>
+                    <p>Tlf: + 45 xx xx xx xx</p>
+                    <p>Email: xxxxx@xxx.dk</p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="mb-4 font-weight-bold">Hold dig opdateret med vores nyhedsbrev</h6>
+                    <p>Lorem ipsum lala jaja</p>
+                    <form>
+                        <div class="form-group row">
+                            <div class="mx-auto mx-md-3">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="mx-auto mx-md-3">
+                                <button type="submit" class="btn btn-primary">Tilmeld</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <hr class="w-100 clearfix d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="mx-auto mt-3">
+                        <p>Cookies</p>
+                        <p>Presse</p>
+                        <p>Smileyrapport</p>
+                        <p>Privatpolitik</p>
+                        <img src="..." alt="fb">
+                        <img src="..." alt="insta">
+                    </div>
+                </div>
+
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+            </div>
+            <!-- Footer links -->
+        </div>
+        <!-- Footer Links -->
+    </footer>
+    <!-- Footer -->
 
 
     <!-- Optional JavaScript -->

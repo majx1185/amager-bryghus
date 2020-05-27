@@ -33,33 +33,34 @@ $(document).ready(function () {
 //}
 
 
-//let feed = [];
-//
-//document.addEventListener("DOMContentLoaded", start);
-//
-//function start() {
-//    getJson();
-//}
-//
-//async function getJson() {
-//    let url =
-//        "http://majroslyng.dk/kea/eksamen4/wordpress/wp-json/wp/v2/posts"
-//    let jsonData = await fetch(url);
-//    feed = await jsonData.json();
-//    visFeed();
-//}
-//
-//function visFeed() {
-//    let temp = document.querySelector("template");
-//    let dest = document.querySelector(".beerscontainer")
-//
-//    feed.forEach(onepost => {
-//        console.log(onepost);
-//
-//        let klon = temp.cloneNode(true).content;
-//        klon.querySelector("img").src = onepost.guid;
-//
-//        klon.querySelector("a").href = "eachpic.html?slug=" + onepost.slug;
-//        dest.appendChild(klon);
-//    });
-//}
+let feed = [];
+
+document.addEventListener("DOMContentLoaded", start);
+
+function start() {
+    getJson();
+}
+
+async function getJson() {
+    let url =
+        "http://majroslyng.dk/kea/eksamen4/wordpress/wp-json/wp/v2/posts"
+    let jsonData = await fetch(url);
+    feed = await jsonData.json();
+    visFeed();
+}
+
+function visFeed() {
+    let temp = document.querySelector("template");
+    let dest = document.querySelector(".beerscontainer")
+
+    feed.forEach(onepost => {
+        console.log(onepost);
+
+        let klon = temp.cloneNode(true).content;
+        klon.querySelector("img").src = onepost.guid;
+        klon.querySelector("h2").innerHTML = onepost.title.rendered;
+
+        klon.querySelector("a").href = "view.html?slug=" + onepost.slug;
+        dest.appendChild(klon);
+    });
+}

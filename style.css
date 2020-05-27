@@ -179,7 +179,40 @@
     /* Transition effect when sliding down (and up) */
 }
 
+.dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #000;
+}
+
 /*FORSIDE*/
+
+.modal-backdrop.show {
+    display: none;
+}
+
+.modal-backdrop {
+    display: none;
+}
+
+.modal-dialog {
+    max-width: 100vw;
+    margin: auto;
+}
+
+.modal-content {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+
+.fade {
+    transition: opacity .5s linear;
+}
+
 
 .img-gradient,
 .img-gradient2,
