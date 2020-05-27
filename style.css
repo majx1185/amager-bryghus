@@ -261,6 +261,13 @@ img {
     background-position: left bottom;
 }
 
+.btn-secondary {
+    border-radius: 0;
+}
+
+/*KARRUSEL MED ØL*/
+
+
 /*MEDIA*/
 
 @media (min-width: 992px) {
